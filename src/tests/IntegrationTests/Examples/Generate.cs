@@ -1,9 +1,9 @@
 /*
 order: 10
-title: Generate
-slug: generate
+title: Avatar from Measurements
+slug: avatar-from-measurements
 
-Basic example showing how to create a client and make a request.
+Shows how to create an avatar from body measurements.
 */
 
 namespace Meshcapade.IntegrationTests;
@@ -11,8 +11,20 @@ namespace Meshcapade.IntegrationTests;
 public partial class Tests
 {
     [TestMethod]
-    public async Task Example_Generate()
+    public async Task AvatarFromMeasurements()
     {
         using var client = GetAuthenticatedClient();
+
+        //// Create an avatar from body measurements.
+        var response = await client.AvatarsFromMeasurements.CreateAvatarFromMeasurementsAsync(
+            new MeasurementAvatarRequest
+            {
+                Gender = Gender.Male,
+                Name = "test-avatar",
+                ModelVersion = ModelVersion.Smplx,
+            });
+        response.Data.Should().NotBeNull();
+        response.Data!.Id.Should().NotBeNull();
+        Console.WriteLine($"Avatar ID: {response.Data.Id}");
     }
 }

@@ -203,6 +203,7 @@ namespace Meshcapade
             string? upAxis = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Meshcapade.FitToScansRequest
             {
                 InitPose = initPose,

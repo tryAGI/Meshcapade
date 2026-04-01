@@ -235,6 +235,7 @@ namespace Meshcapade
             string? imageMode = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Meshcapade.FitToImagesRequest
             {
                 ImageMode = imageMode,

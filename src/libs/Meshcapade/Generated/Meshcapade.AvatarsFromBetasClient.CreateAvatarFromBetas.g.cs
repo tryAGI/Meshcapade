@@ -209,7 +209,6 @@ namespace Meshcapade
             global::System.Collections.Generic.Dictionary<string, double>? predictedMeasurements = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Meshcapade.BetasAvatarRequest
             {
                 Betas = betas,

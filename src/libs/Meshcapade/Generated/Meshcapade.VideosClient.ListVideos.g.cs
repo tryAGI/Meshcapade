@@ -5,6 +5,25 @@ namespace Meshcapade
 {
     public partial class VideosClient
     {
+
+
+        private static readonly global::Meshcapade.EndPointSecurityRequirement s_ListVideosSecurityRequirement0 =
+            new global::Meshcapade.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Meshcapade.EndPointAuthorizationRequirement[]
+                {                    new global::Meshcapade.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Meshcapade.EndPointSecurityRequirement[] s_ListVideosSecurityRequirements =
+            new global::Meshcapade.EndPointSecurityRequirement[]
+            {                s_ListVideosSecurityRequirement0,
+            };
         partial void PrepareListVideosArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref int? limit,
@@ -44,13 +63,19 @@ namespace Meshcapade
                 limit: ref limit,
                 page: ref page);
 
+
+            var __authorizations = global::Meshcapade.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ListVideosSecurityRequirements,
+                operationName: "ListVideosAsync");
+
             var __pathBuilder = new global::Meshcapade.PathBuilder(
                 path: "/videos",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("limit", limit?.ToString())
                 .AddOptionalParameter("page", page?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -60,7 +85,7 @@ namespace Meshcapade
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

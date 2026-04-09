@@ -5,6 +5,25 @@ namespace Meshcapade
 {
     public partial class AssetsClient
     {
+
+
+        private static readonly global::Meshcapade.EndPointSecurityRequirement s_ListAssetsSecurityRequirement0 =
+            new global::Meshcapade.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Meshcapade.EndPointAuthorizationRequirement[]
+                {                    new global::Meshcapade.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Meshcapade.EndPointSecurityRequirement[] s_ListAssetsSecurityRequirements =
+            new global::Meshcapade.EndPointSecurityRequirement[]
+            {                s_ListAssetsSecurityRequirement0,
+            };
         partial void PrepareListAssetsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref int? limit,
@@ -49,6 +68,12 @@ namespace Meshcapade
                 page: ref page,
                 include: ref include);
 
+
+            var __authorizations = global::Meshcapade.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ListAssetsSecurityRequirements,
+                operationName: "ListAssetsAsync");
+
             var __pathBuilder = new global::Meshcapade.PathBuilder(
                 path: "/assets",
                 baseUri: HttpClient.BaseAddress); 
@@ -56,7 +81,7 @@ namespace Meshcapade
                 .AddOptionalParameter("limit", limit?.ToString())
                 .AddOptionalParameter("page", page?.ToString())
                 .AddOptionalParameter("include", include) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -66,7 +91,7 @@ namespace Meshcapade
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

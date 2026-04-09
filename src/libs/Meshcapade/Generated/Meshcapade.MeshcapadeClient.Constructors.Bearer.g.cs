@@ -6,6 +6,7 @@ namespace Meshcapade
     public sealed partial class MeshcapadeClient
     {
         /// <inheritdoc cref="MeshcapadeClient(global::System.Net.Http.HttpClient?, global::System.Uri?, global::System.Collections.Generic.List{global::Meshcapade.EndPointAuthorization}?, bool)"/>
+
         public MeshcapadeClient(
             string apiKey,
             global::System.Net.Http.HttpClient? httpClient = null,

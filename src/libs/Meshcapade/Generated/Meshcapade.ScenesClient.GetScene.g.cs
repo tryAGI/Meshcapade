@@ -5,6 +5,25 @@ namespace Meshcapade
 {
     public partial class ScenesClient
     {
+
+
+        private static readonly global::Meshcapade.EndPointSecurityRequirement s_GetSceneSecurityRequirement0 =
+            new global::Meshcapade.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Meshcapade.EndPointAuthorizationRequirement[]
+                {                    new global::Meshcapade.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Meshcapade.EndPointSecurityRequirement[] s_GetSceneSecurityRequirements =
+            new global::Meshcapade.EndPointSecurityRequirement[]
+            {                s_GetSceneSecurityRequirement0,
+            };
         partial void PrepareGetSceneArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.Guid assetID);
@@ -37,9 +56,15 @@ namespace Meshcapade
                 httpClient: HttpClient,
                 assetID: ref assetID);
 
+
+            var __authorizations = global::Meshcapade.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetSceneSecurityRequirements,
+                operationName: "GetSceneAsync");
+
             var __pathBuilder = new global::Meshcapade.PathBuilder(
                 path: $"/scenes/{assetID}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -49,7 +74,7 @@ namespace Meshcapade
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

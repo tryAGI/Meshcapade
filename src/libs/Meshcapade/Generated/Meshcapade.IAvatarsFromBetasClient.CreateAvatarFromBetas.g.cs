@@ -8,11 +8,13 @@ namespace Meshcapade
         /// Create avatar from SMPL shape parameters
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Meshcapade.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Meshcapade.AssetResponse> CreateAvatarFromBetasAsync(
 
             global::Meshcapade.BetasAvatarRequest request,
+            global::Meshcapade.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create avatar from SMPL shape parameters
@@ -29,6 +31,7 @@ namespace Meshcapade
         /// <param name="poseName"></param>
         /// <param name="poses"></param>
         /// <param name="predictedMeasurements"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Meshcapade.AssetResponse> CreateAvatarFromBetasAsync(
@@ -42,6 +45,7 @@ namespace Meshcapade
             string? poseName = default,
             global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<double>>? poses = default,
             global::System.Collections.Generic.Dictionary<string, double>? predictedMeasurements = default,
+            global::Meshcapade.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

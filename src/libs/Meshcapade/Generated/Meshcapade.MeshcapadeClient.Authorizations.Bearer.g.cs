@@ -25,6 +25,7 @@ namespace Meshcapade
             Authorizations.Add(new global::Meshcapade.EndPointAuthorization
             {
                 Type = "Http",
+                SchemeId = "BearerAuth",
                 Location = "Header",
                 Name = "Bearer",
                 Value = apiKey,

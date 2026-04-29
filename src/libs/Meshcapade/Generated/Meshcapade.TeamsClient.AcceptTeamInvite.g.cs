@@ -119,7 +119,7 @@ namespace Meshcapade
                 PrepareAcceptTeamInviteRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    teamID: teamID);
+                    teamID: teamID!);
 
                 return __httpRequest;
             }

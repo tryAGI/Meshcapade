@@ -138,7 +138,7 @@ namespace Meshcapade
                 PrepareFitSceneToVideoRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    assetID: assetID,
+                    assetID: assetID!,
                     request: request);
 
                 return __httpRequest;

@@ -124,7 +124,7 @@ namespace Meshcapade
                 PrepareRequestImageUploadRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    assetID: assetID);
+                    assetID: assetID!);
 
                 return __httpRequest;
             }

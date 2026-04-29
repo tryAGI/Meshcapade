@@ -138,7 +138,7 @@ namespace Meshcapade
                 PrepareFitToScansRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    assetID: assetID,
+                    assetID: assetID!,
                     request: request);
 
                 return __httpRequest;

@@ -133,7 +133,7 @@ namespace Meshcapade
                 PrepareRenameTeamRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    teamID: teamID,
+                    teamID: teamID!,
                     request: request);
 
                 return __httpRequest;

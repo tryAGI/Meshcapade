@@ -119,7 +119,7 @@ namespace Meshcapade
                 PrepareGetCreditBundlePaymentLinkRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    bundleID: bundleID);
+                    bundleID: bundleID!);
 
                 return __httpRequest;
             }

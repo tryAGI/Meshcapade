@@ -124,5 +124,6 @@ namespace Meshcapade
         public BetasAvatarRequest()
         {
         }
+
     }
 }

@@ -66,5 +66,6 @@ namespace Meshcapade
         public ErrorDetail()
         {
         }
+
     }
 }

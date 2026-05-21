@@ -39,5 +39,6 @@ namespace Meshcapade
         public SubscriptionPaymentLinkRequest()
         {
         }
+
     }
 }

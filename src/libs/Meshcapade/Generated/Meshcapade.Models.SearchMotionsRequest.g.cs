@@ -52,5 +52,6 @@ namespace Meshcapade
         public SearchMotionsRequest()
         {
         }
+
     }
 }

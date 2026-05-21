@@ -19,6 +19,18 @@ namespace Meshcapade
         /// <summary>
         /// Create avatar from SMPL shape parameters
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Meshcapade.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Meshcapade.AutoSDKHttpResponse<global::Meshcapade.AssetResponse>> CreateAvatarFromBetasAsResponseAsync(
+
+            global::Meshcapade.BetasAvatarRequest request,
+            global::Meshcapade.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create avatar from SMPL shape parameters
+        /// </summary>
         /// <param name="betas">
         /// SMPL shape parameters
         /// </param>

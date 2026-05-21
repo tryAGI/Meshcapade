@@ -70,5 +70,6 @@ namespace Meshcapade
         public MeasurementAvatarRequest()
         {
         }
+
     }
 }

@@ -75,5 +75,6 @@ namespace Meshcapade
         public AssetResource()
         {
         }
+
     }
 }

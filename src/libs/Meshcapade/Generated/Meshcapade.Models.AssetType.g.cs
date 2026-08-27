@@ -4,48 +4,48 @@
 namespace Meshcapade
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AssetType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Animation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Avatar,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Image,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Json,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mesh,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Motion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PoseSequence,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scene,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Texture,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Video,
     }

@@ -4,7 +4,7 @@
 namespace Meshcapade
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BetasAvatarRequest
     {
@@ -15,57 +15,57 @@ namespace Meshcapade
         public global::System.Collections.Generic.IList<double>? Betas { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fps")]
         public double? Fps { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gender")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshcapade.JsonConverters.GenderJsonConverter))]
         public global::Meshcapade.Gender? Gender { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("images")]
         public global::Meshcapade.ImageTagLinks? Images { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("input_measurements")]
         public global::System.Collections.Generic.Dictionary<string, double>? InputMeasurements { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("modelVersion")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshcapade.JsonConverters.ModelVersionJsonConverter))]
         public global::Meshcapade.ModelVersion? ModelVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         public string? Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("poseName")]
         public string? PoseName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("poses")]
         public global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<double>>? Poses { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("predicted_measurements")]
         public global::System.Collections.Generic.Dictionary<string, double>? PredictedMeasurements { get; set; }

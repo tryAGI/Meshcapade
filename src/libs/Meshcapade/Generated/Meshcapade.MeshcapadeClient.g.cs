@@ -11,7 +11,7 @@ namespace Meshcapade
     public sealed partial class MeshcapadeClient : global::Meshcapade.IMeshcapadeClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "https://api.meshcapade.com/api/v1";
 
@@ -38,7 +38,7 @@ namespace Meshcapade
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Meshcapade.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
@@ -48,7 +48,7 @@ namespace Meshcapade
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AssetsClient Assets => new AssetsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -57,7 +57,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AvatarsClient Avatars => new AvatarsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -66,7 +66,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AvatarsFromBetasClient AvatarsFromBetas => new AvatarsFromBetasClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -75,7 +75,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AvatarsFromImagesClient AvatarsFromImages => new AvatarsFromImagesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -84,7 +84,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AvatarsFromMeasurementsClient AvatarsFromMeasurements => new AvatarsFromMeasurementsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -93,7 +93,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AvatarsFromScansClient AvatarsFromScans => new AvatarsFromScansClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -102,7 +102,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AvatarsFromSmplClient AvatarsFromSmpl => new AvatarsFromSmplClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -111,7 +111,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AvatarsFromVideoClient AvatarsFromVideo => new AvatarsFromVideoClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -120,7 +120,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreditsClient Credits => new CreditsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -129,7 +129,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImagesClient Images => new ImagesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -138,7 +138,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InfoClient Info => new InfoClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -147,7 +147,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MeshesClient Meshes => new MeshesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -156,7 +156,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MotionsClient Motions => new MotionsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -165,7 +165,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ScenesClient Scenes => new ScenesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -174,7 +174,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SubscriptionsClient Subscriptions => new SubscriptionsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -183,7 +183,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TeamsClient Teams => new TeamsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -192,7 +192,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UserClient User => new UserClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -201,7 +201,7 @@ namespace Meshcapade
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VideosClient Videos => new VideosClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {

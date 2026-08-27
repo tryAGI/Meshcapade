@@ -4,24 +4,24 @@
 namespace Meshcapade
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ExportPose
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         A,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         I,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scan,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         T,
     }

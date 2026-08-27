@@ -4,12 +4,12 @@
 namespace Meshcapade
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class HealthCheckResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         public string? Status { get; set; }

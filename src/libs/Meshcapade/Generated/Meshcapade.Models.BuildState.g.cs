@@ -4,40 +4,40 @@
 namespace Meshcapade
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AwaitingInput,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AwaitingProcessing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Canceled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Completed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preparing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Processing,
     }

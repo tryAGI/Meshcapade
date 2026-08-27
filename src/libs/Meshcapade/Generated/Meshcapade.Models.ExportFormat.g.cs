@@ -4,20 +4,20 @@
 namespace Meshcapade
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ExportFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fbx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Obj,
     }

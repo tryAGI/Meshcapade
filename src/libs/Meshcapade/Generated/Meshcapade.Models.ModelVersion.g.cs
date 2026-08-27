@@ -4,20 +4,20 @@
 namespace Meshcapade
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ModelVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Smplh,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Smplx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Supr,
     }

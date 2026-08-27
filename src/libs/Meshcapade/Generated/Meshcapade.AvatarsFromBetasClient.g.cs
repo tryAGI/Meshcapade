@@ -10,7 +10,7 @@ namespace Meshcapade
     public sealed partial class AvatarsFromBetasClient : global::Meshcapade.IAvatarsFromBetasClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "https://api.meshcapade.com/api/v1";
 
@@ -37,7 +37,7 @@ namespace Meshcapade
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Meshcapade.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {

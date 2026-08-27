@@ -4,100 +4,100 @@
 namespace Meshcapade
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildMethod
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Afi2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Align,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BedlamCliff,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Export,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExportBlender,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExportGloss,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FromBetas,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FromImages,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FromMeasurements,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FromScans,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FromSmpl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FromSmplMotion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FromSmplPose,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FromVideo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ingest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Measure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MotionBlend,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Regress,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Render,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SearchMotions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Shapy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Update,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Upload,
     }

@@ -40,98 +40,98 @@ namespace Meshcapade
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AssetsClient Assets { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AvatarsClient Avatars { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AvatarsFromBetasClient AvatarsFromBetas { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AvatarsFromImagesClient AvatarsFromImages { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AvatarsFromMeasurementsClient AvatarsFromMeasurements { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AvatarsFromScansClient AvatarsFromScans { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AvatarsFromSmplClient AvatarsFromSmpl { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AvatarsFromVideoClient AvatarsFromVideo { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreditsClient Credits { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImagesClient Images { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InfoClient Info { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MeshesClient Meshes { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MotionsClient Motions { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ScenesClient Scenes { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SubscriptionsClient Subscriptions { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TeamsClient Teams { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UserClient User { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VideosClient Videos { get; }
 

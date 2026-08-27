@@ -4,12 +4,12 @@
 namespace Meshcapade
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ExportRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("format")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshcapade.JsonConverters.ExportFormatJsonConverter))]
@@ -17,33 +17,33 @@ namespace Meshcapade
         public required global::Meshcapade.ExportFormat Format { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pose")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshcapade.JsonConverters.ExportPoseJsonConverter))]
         public global::Meshcapade.ExportPose? Pose { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("compatibilityMode")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshcapade.JsonConverters.CompatibilityModeJsonConverter))]
         public global::Meshcapade.CompatibilityMode? CompatibilityMode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("animation")]
         public string? Animation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("filename")]
         public string? Filename { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("avatarSceneIndex")]
         public int? AvatarSceneIndex { get; set; }

@@ -4,12 +4,12 @@
 namespace Meshcapade
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class MeasurementAvatarRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gender")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshcapade.JsonConverters.GenderJsonConverter))]
@@ -22,14 +22,14 @@ namespace Meshcapade
         public global::System.Collections.Generic.Dictionary<string, double>? Measurements { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("modelVersion")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshcapade.JsonConverters.ModelVersionJsonConverter))]
         public global::Meshcapade.ModelVersion? ModelVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         public string? Name { get; set; }

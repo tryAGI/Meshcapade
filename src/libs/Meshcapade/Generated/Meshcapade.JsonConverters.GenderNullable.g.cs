@@ -20,7 +20,7 @@ namespace Meshcapade.JsonConverters
                     {
                         return global::Meshcapade.GenderExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

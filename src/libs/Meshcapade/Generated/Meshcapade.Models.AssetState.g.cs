@@ -4,48 +4,48 @@
 namespace Meshcapade
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AssetState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AwaitingAfiInput,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AwaitingAfsInput,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AwaitingAfvInput,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AwaitingProcessing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AwaitingUpload,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Canceled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Empty,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Processing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ready,
     }

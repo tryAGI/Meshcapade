@@ -4,20 +4,20 @@
 namespace Meshcapade
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CompatibilityMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Default,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Optitex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unreal,
     }

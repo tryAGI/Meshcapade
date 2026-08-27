@@ -4,24 +4,24 @@
 namespace Meshcapade
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FileSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Generated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Meshcapade,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OnPremPlaceholder,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Upload,
     }

@@ -56,6 +56,7 @@ namespace Meshcapade
             typeof(global::Meshcapade.JsonConverters.UnixTimestampJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Meshcapade.JsonSerializerContextTypes))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Meshcapade.Gender), TypeInfoPropertyName = "Gender2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Meshcapade.ModelVersion), TypeInfoPropertyName = "ModelVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Meshcapade.AssetState), TypeInfoPropertyName = "AssetState2")]
